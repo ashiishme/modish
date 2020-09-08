@@ -1,0 +1,24 @@
+{
+  "name": "modish",
+  "version": "1.0.0",
+  "description": "A WordPress boilerplate themes with modern workflow & automations.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashiishme/modish.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Boilerplate",
+    "Webpack & WordPress"
+  ],
+  "author": "Ashish Yadav <logiicode@outlook.com> (https://ashiish.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashiishme/modish/issues"
+  },
+  "homepage": "https://github.com/ashiishme/modish#readme"
+}
