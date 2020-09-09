@@ -141,11 +141,11 @@ add_action( 'widgets_init', 'modish_widgets_init' );
  * Enqueue scripts and styles.
  */
 function modish_scripts() {
-	wp_enqueue_style( 'modish-style', get_template_directory_uri() . '/dist/css/style.css', array(), MODISH_VERSION );
+	wp_enqueue_style( 'modish-style', get_template_directory_uri() . '/dist/css/app.min.css', array(), MODISH_VERSION );
 	/** Currently not supported */
 	//wp_style_add_data( 'modish-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'modish-navigation', get_template_directory_uri() . '/js/navigation.js', array(), MODISH_VERSION, true );
+	wp_enqueue_script( 'modish-js', get_template_directory_uri() . '/js/app.min.js', array(), MODISH_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
