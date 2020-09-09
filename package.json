@@ -1,24 +1,42 @@
 {
-  "name": "modish",
-  "version": "1.0.0",
-  "description": "A WordPress boilerplate themes with modern workflow & automations.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ashiishme/modish.git"
-  },
-  "keywords": [
-    "WordPress",
-    "Boilerplate",
-    "Webpack & WordPress"
-  ],
-  "author": "Ashish Yadav <logiicode@outlook.com> (https://ashiish.me)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ashiishme/modish/issues"
-  },
-  "homepage": "https://github.com/ashiishme/modish#readme"
+    "name": "modish",
+    "version": "1.0.0",
+    "description": "A WordPress boilerplate themes with modern workflow & automations.",
+    "main": "app.js",
+    "scripts": {
+        "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
+        "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ashiishme/modish.git"
+    },
+    "keywords": [
+        "WordPress",
+        "Boilerplate",
+        "Webpack & WordPress"
+    ],
+    "author": "Ashish Yadav <logiicode@outlook.com> (https://ashiish.me)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ashiishme/modish/issues"
+    },
+    "homepage": "https://github.com/ashiishme/modish#readme",
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "cross-env": "^7.0.2",
+        "css-loader": "^4.3.0",
+        "cssnano": "^4.1.10",
+        "file-loader": "^6.1.0",
+        "mini-css-extract-plugin": "^0.11.1",
+        "node-sass": "^4.14.1",
+        "optimize-css-assets-webpack-plugin": "^5.0.4",
+        "sass-loader": "^10.0.2",
+        "style-loader": "^1.2.1",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    }
 }
